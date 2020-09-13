@@ -1,0 +1,92 @@
+@import "../scss/varibles";
+
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
+
+body{
+
+}
+
+.navbar{
+  position: fixed;
+  z-index: 6;
+  width: 100%;
+  text-transform: uppercase;
+
+  a.navbar-brand{
+    font-size: 2rem;
+    border: 1px solid #fff;
+    box-sizing: border-box;
+    padding: 1rem !important;
+
+
+  }
+
+  .collapse .navbar-nav li a {
+    color: #fff !important;
+    margin: 5px;
+
+    &:hover{
+      color:green !important;
+      transition: all 1s ease-in;
+    }
+  }
+
+
+}
+
+  a.nav-link{
+    color: #fff !important;
+  }
+
+
+#home {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  background: url("/dist/images/james-harrison-vpOeXr5wmR4-unsplash.jpg") no-repeat center center/cover;
+  z-index: 2;
+  
+ &::before{
+   content: "";
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   background-image: linear-gradient(120deg, #000000, #181e53);
+   opacity: .8;
+   z-index: -2;
+ }
+
+
+&-a {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  h1{
+    border: 2px solid $primary;
+    color: $primary;
+    padding: 1rem;
+    margin-bottom: 3rem;
+  }
+
+  h2{
+    margin-bottom: .5rem;
+    text-transform: uppercase;
+     
+    span {
+      color: $warning;
+    }
+
+
+  }
+
+      p{
+      color: $primary;
+    }
+}
+
+}
