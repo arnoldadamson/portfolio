@@ -7221,7 +7221,7 @@ a.text-dark:hover, a.text-dark:focus {
     border-color: #dee2e6; } }
 
 body {
-  font-family: 'Roboto', sans-serif; }
+  font-family: "Roboto", sans-serif; }
 
 .navbar {
   position: absolute;
@@ -7236,7 +7236,8 @@ body {
   .navbar .collapse .navbar-nav li a {
     margin: 10px;
     margin-right: 2rem;
-    border: 1px solid #fff; }
+    border: 1px solid #fff;
+    padding: 0.6rem; }
     .navbar .collapse .navbar-nav li a:hover {
       background: #3957db;
       border-radius: 5px;
@@ -7283,6 +7284,11 @@ a.nav-link {
     #home-a p {
       color: #f4f4f4;
       font-size: 2rem; }
+    #home-a .icons i {
+      color: #3957db;
+      margin: 2px; }
+      #home-a .icons i:hover {
+        color: #f4f4f4; }
     #home-a #arrow-down i {
       margin-top: 5rem; }
   #home-b {
@@ -7291,23 +7297,41 @@ a.nav-link {
     background: #f4f4f4;
     display: flex;
     align-items: center;
-    justify-content: s;
     overflow: hidden;
-    margin-top: 2rem;
-    margin-bottom: 2rem;
-    background: none; }
-    #home-b #about-skills {
+    margin-bottom: 2rem; }
+    #home-b .about-me {
+      height: 300px;
       flex: 1;
-      height: 100%; }
-      #home-b #about-skills ul {
+      margin-bottom: 2rem;
+      font-size: 1.3rem; }
+    #home-b .about-skills {
+      height: 300px;
+      flex: 1;
+      margin-bottom: 2rem; }
+      #home-b .about-skills ul {
         display: flex;
-        list-style: none; }
-        #home-b #about-skills ul li {
+        list-style: none;
+        flex-wrap: wrap; }
+        #home-b .about-skills ul li.skill-item {
           padding: 1rem;
-          margin: 5px;
-          background: #3957db;
+          margin: 1rem;
           color: #f4f4f4;
-          border-radius: 5px; }
-    #home-b #about-info {
-      flex: 1;
-      width: 100%; }
+          width: 120px;
+          height: 120px;
+          text-align: center;
+          border-radius: 50%;
+          color: black; }
+          #home-b .about-skills ul li.skill-item.item1 {
+            background: coral; }
+          #home-b .about-skills ul li.skill-item.item2 {
+            background: #3957db; }
+          #home-b .about-skills ul li.skill-item.item3 {
+            background: purple; }
+          #home-b .about-skills ul li.skill-item.item4 {
+            background: #df7385; }
+          #home-b .about-skills ul li.skill-item.item5 {
+            background: yellow;
+            color: black; }
+          #home-b .about-skills ul li.skill-item.item6 {
+            background: green;
+            color: black; }

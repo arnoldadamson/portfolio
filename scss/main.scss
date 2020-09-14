@@ -3,8 +3,8 @@
 
 @import "../node_modules/bootstrap/scss/bootstrap.scss";
 
-body{
-  font-family: 'Roboto', sans-serif;
+body {
+  font-family: "Roboto", sans-serif;
 }
 
 .navbar {
@@ -24,6 +24,7 @@ body{
     margin: 10px;
     margin-right: 2rem;
     border: 1px solid #fff;
+    padding: 0.6rem;
 
     &:hover {
       background: #3957db;
@@ -88,6 +89,15 @@ a.nav-link {
       font-size: 2rem;
     }
 
+    .icons i {
+      color: $warning;
+      margin: 2px;
+
+      &:hover {
+        color: $primary;
+      }
+    }
+
     #arrow-down i {
       margin-top: 5rem;
     }
@@ -100,37 +110,58 @@ a.nav-link {
     background: #f4f4f4;
     display: flex;
     align-items: center;
-    justify-content: s;
     overflow: hidden;
-    margin-top: 2rem;
     margin-bottom: 2rem;
-    background: none;
-    
-    #about-skills{
+
+    .about-me {
+      height: 300px;
       flex: 1;
-      height: 100%;
+      margin-bottom: 2rem;
+      font-size: 1.3rem;
+    }
+
+    .about-skills {
+      height: 300px;
+      flex: 1;
+      margin-bottom: 2rem;
 
       ul {
         display: flex;
         list-style: none;
+        flex-wrap: wrap;
 
-        li {
+        li.skill-item {
           padding: 1rem;
-          margin: 5px;
-          background: $warning;
+          margin: 1rem;
           color: $primary;
-          border-radius: 5px;
+          width: 120px;
+          height: 120px;
+          text-align: center;
+          border-radius: 50%;
+          color: black;
+
+          &.item1 {
+            background: coral;
+          }
+          &.item2 {
+            background: #3957db;
+          }
+          &.item3 {
+            background: purple;
+          }
+          &.item4 {
+            background: rgb(223, 115, 133);
+          }
+          &.item5 {
+            background: yellow;
+            color: black;
+          }
+          &.item6 {
+            background: green;
+            color: black;
+          }
         }
       }
-
     }
-
-        #about-info {
-      flex: 1;
-      width: 100%;
-    }
-
-    }
-
-
   }
+}
