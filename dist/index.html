@@ -73,49 +73,87 @@
         </div>
       </div>
 
-      <div class="container bg-white" id="home-b">
-        <div class="about-me">
-          <div>
-            <h3 class="display-4">Minust</h3>
-            <p>Tere, mina olen Arnold Adamson.</p>
-            <p>Minu hobiks on arendada kodulehti</p>
-            <a class="btn btn-warning btn-lg mt-5" href="#" role="button"
-              >Saada kiri</a
-            >
-          </div>
-        </div>
-        <div class="about-skills">
-          <h3 class="text-center display-4">Oskused</h3>
-          <ul>
-            <li class="skill-item item1">
-              <p>HTML</p>
-              <i class="fab fa-css3 fa-2x"></i>
-            </li>
-            <li class="skill-item item2">
-              <p>CSS5</p>
-              <i class="fab fa-html5 fa-2x"></i>
-            </li>
-            <li class="skill-item item3">
-              <p>BOOTSRAP</p>
-              <i class="fab fa-bootstrap fa-3x"></i>
-            </li>
-            <li class="skill-item item4">
-              <p>SASS</p>
-              <i class="fab fa-sass fa-2x"></i>
-            </li>
-            <li class="skill-item item5">
-              <p>Javascript</p>
-              <i class="fab fa-js fa-2x"></i>
-            </li>
-            <li class="skill-item item6">
-              <p>Wordpress</p>
-              <i class="fab fa-wordpress fa-2x"></i>
-            </li>
-          </ul>
-        </div>
+      <div class="container" id="home-b">
+        <h3 class="display-4 text-center"><span>tehnilised</span> oskused</h3>
+        <ul id="skills">
+          <li>
+            <img src="https://img.icons8.com/color/96/000000/html-5.png" />
+            <p>HTML5</p>
+          </li>
+          <li>
+            <img src="https://img.icons8.com/color/96/000000/css3.png" />
+            <p>CSS3</p>
+          </li>
+          <li>
+            <img
+              class=""
+              src="https://img.icons8.com/color/96/000000/bootstrap.png"
+            />
+            <p>Bootstrap</p>
+          </li>
+          <li>
+            <img src="https://img.icons8.com/color/96/000000/sass.png" />
+            <p>SASS</p>
+          </li>
+          <li>
+            <img src="https://img.icons8.com/color/96/000000/javascript.png" />
+            <p>JS</p>
+          </li>
+          <li class="">
+            <img src="https://img.icons8.com/color/96/000000/wordpress.png" />
+            <p>Wordpress</p>
+          </li>
+        </ul>
       </div>
-    </section>
 
+      <div id="home-c">
+        <h1 class="display-4 text-center">Projektid</h1>
+        <div class="container">
+          <div class="card" style="width: 18rem">
+            <img src="/dist/images/Melikri.png" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">www.melikri.ee</h5>
+              <p class="card-text">
+                Koduleht ehitus firmale.
+                Leht on loodud wordpressi keskkonnas.
+              </p>
+            </div>
+            <div class="card-buttons">
+              <a  href="https://www.melikri.ee/" target="_blank"><i class="fas fa-desktop"> Live</i></a>
+            </div>
+          </div>
+          <div class="card" style="width: 18rem">
+            <img
+              src="/dist/images/newsgrid.png"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">NewsGrid</h5>
+              <p class="card-text">
+                Lehekülje loomiseks kasutatud tehnoloogiad: HTML, CSS , SASS.
+              </p>
+            </div>
+            <div class="card-buttons">
+              <a class="" target="_blank" href="https://github.com/arnoldadamson/TraversyMediaCourse/tree/master/NewsGrid"><i class="fab fa-github"> Code</i></a>
+              <a class="" target="_blank" href="https://serene-wozniak-1edf95.netlify.app/"><i class="fas fa-desktop"> Live</i></a>
+            </div>
+          </div>
+          <div class="card" style="width: 18rem">
+            <img src="/dist/images/hello.jpg" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+            </div>
+            <div class="card-buttons">
+              <a class="" href=""><i class="fab fa-github"> Code</i></a>
+              <a class="" href=""><i class="fas fa-desktop"> Live</i></a>
+            </div>
+          </div>
+    </section>
     <script src="../dist/js/typewriter.js"></script>
     <script
       src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
