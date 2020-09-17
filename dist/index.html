@@ -162,43 +162,55 @@
           </div>
         </div>
       </div>
+
+
       <div id="home-d" class="container">
         <div class="about-me">
-          <h3 class="display-3">Minust</h3>
+          <h3 class="display-4">Minust</h3>
           <ul>
-            <li>Nimi: Arnold Adamson</li>
-            <li>Telefon: +(372)58277325</li>
-            <li>Email: Arnold.Adamson@outlook.com</li>
+            <li><i class="fas fa-user text-warning"></i>  Nimi: Arnold Adamson</li>
+            <li><i class="fas fa-phone text-warning"></i> Telefon: +(372)58277325</li>
+            <li><i class="fas fa-envelope text-warning"></i> Email: Arnold.Adamson@outlook.com</li>
             </li>
           </ul>
           <p class="lead p-2">Olen iseseisvalt õppinud front-end veebiarendaja.
              Tänu suurele huvile veebiarenduses täiendan oma oskusi igapäevaselt. </p>
         </div>
-        <div class="contact">
-          <form>
-  <div class="form-group">
-    <h3 class="display-3">Võta ühendust</h3>
-    <label for="name">Nimi</label>
-    <input type="text" class="form-control" id="name" placeholder="Nimi">
-  </div>
-  <div class="form-group">
-    <label for="exampleInputEmail1">E-mail</label>
-    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-    <small id="emailHelp" class="form-text text-muted">Ma ei jaga teie e-posti aadressi kunagi kellegi teisega.</small>
-  </div>
-
-<form class="was-validated">
-  <div class="mb-3">
-    <label for="validationTextarea">Sõnum</label>
-    <textarea class="form-control is-invalid" id="validationTextarea" placeholder="Sisestage sõnum" required></textarea>
-    <div class="invalid-feedback">
-       Palun sisestage tekstialale sõnum.
-    </div>
-  </div>
-  <button type="submit" class="btn btn-warning">Saada</button>
-</form>
+        <div class="about-image">
+          <img src="/dist/images/hello.jpg" alt="">
         </div>
-      </div>
+        </div>
+
+        <div id="home-e" class="container-fluid bg-warning">
+          <div class="form-image">
+            <img src="/dist/images/contact-me.jpg" alt="">
+          </div>
+         
+          <div class="mainForm text-primary">
+            <h3 class="display-4">Võta ühendust</h3>
+            <div class="form-group">
+              <label for="name">Nimi</label>
+            <input type="text" class="form-control" id="name" placeholder="Nimi" required>
+            </div>
+            <div class="form-group">
+              <label for="exampleInputEmail1">E-mail</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required>
+            </div>
+            <div class="mb-3 form-group">
+              <label for="message">Sõnum</label>
+              <textarea class="form-control" id="message" placeholder="Sisestage sõnum" rows="6" required></textarea>
+            </div>
+            <div class="form-group">
+              <button type="submit" class="btn btn-info">Saada</button>
+            </div>
+          </div>
+          
+          
+
+
+      
+
+
     </section>
     <script src="js/typewriter.js"></script>
     <script
